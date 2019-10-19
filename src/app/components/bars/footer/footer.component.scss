@@ -1,0 +1,55 @@
+.img{
+  max-height: 7rem;
+  max-width: 13rem;
+}
+h3{
+	color:  black;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+@media (max-width: 768px){
+  h3 {
+    font-size:2rem;
+  }
+}
+h3 span{
+	color:  red;
+}
+.copyright{
+  min-height:2rem;
+  background-color: rgba(0,0,0,.1);
+  color: #666;
+}
+.copyright a{
+  text-decoration: none;
+  color: #666;
+}
+.copyright a:hover{
+  color: red;
+}
+.footer{
+  background:#292c2f;
+
+}
+ul#mail-address li a{
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+ul#mail-address li a:hover{
+  color: red;
+
+}
+.social{
+  color: #666;
+}
+.facebook{
+  background:  #3B5998;
+}
+.instagram{
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+.youtube{
+  background: red;
+}

@@ -1,0 +1,47 @@
+<mat-card  class=" mx-auto mb-3 text-center">
+  <h1>Formulaire d'inscription</h1>
+  <p class="text-justify my-5">Dans un premier lieu, les participants devront remplir ce formulaire. Les champs du formulaire devront être remplis très précisément.
+    Certaines informations seront confidentielles, délivrées seulement au comité d’organisation.
+   Enfin, chaque participant devra s'acquitter des frais liés à son inscription au présent concours.
+    Ces frais sont fixés à 20DT et devront être virés au compte postal du club ou livré directement au trésorier
+   du club (un email sera communiqué aux participants contenant tous les détails).</p>
+<form [formGroup]="inscriptionForm"  class="d-flex flex-column mx-auto">
+  <!-- Leader  -->
+  <div class="d-flex flex-column flex-md-row justify-content-between" >
+    <mat-form-field appearance="outline" color="accent">
+      <mat-label>Nom et Prénom</mat-label>
+      <input matInput  formControlName="name" >
+      <mat-error *ngIf="name.invalid" class="has-text-danger">
+        Nom invalide
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline" color="accent">
+      <mat-label>Adresse mail</mat-label>
+      <input matInput type="email" formControlName="email">
+      <mat-error *ngIf="email.invalid" class="has-text-danger">
+        Email invalide
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline" color="accent">
+      <mat-label>Numéro de téléphone</mat-label>
+      <input matInput  formControlName="phone">
+      <mat-error *ngIf="phone.invalid" class="has-text-danger">
+        Numéro de téléphone invalide
+      </mat-error>
+    </mat-form-field>
+  </div>
+       <!-- Establishment -->
+    <mat-form-field appearance="outline" color="accent">
+          <mat-label>Etablissement</mat-label>
+          <input matInput  formControlName="establishment">
+          <mat-hint align="end">2 à 50 caractères alphabétique</mat-hint>
+          <mat-error *ngIf="establishment?.invalid" class="has-text-danger">
+            Cet établissement est invalide
+          </mat-error>
+      </mat-form-field>
+  <!-- Submit Button -->
+    <div class="d-flex flex-row justify-content-end">
+        <button mat-raised-button color="primary" type="button" [disabled]="!validate() || disable" (click)="clicked = true; disable = true; submitHandler()">Valider</button>
+    </div>
+</form>
+</mat-card>

@@ -1,0 +1,12 @@
+mat-card{
+  max-width: 70rem;
+  margin-top: 110px;
+}
+img{
+  max-height: 25rem;
+}
+@media (max-width:578px){
+  img{
+    max-height: 15rem !important;
+  }
+}

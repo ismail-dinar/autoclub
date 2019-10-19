@@ -1,0 +1,108 @@
+<mat-card class="mx-auto mb-5 pt-4 mat-elevation-z4">
+    <div class="text-center animated wow zoomIn" data-wow-delay="500ms"><h1 class="linear-wipe title">Activités du club</h1></div>
+    <div class="row mb-5">
+        <div class="col-md-6 pt-4">
+            <div class="d-flex flex-column animated wow bounceInLeft" data-wow-delay="500ms">
+                <h1 class="linear-wipe">AutoDay</h1>
+                    <p class="text-justify">Autoday est la journée nationale de l’automobile, elle ne cesse de gagner en
+                       ampleur et en notoriété au sein de la communauté des amateurs de la mécanique.
+                       Plus que 3000 étudiants se précipitent chaque édition pour célébrer ce festival de l’automobile unique en son genre.
+                    </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div id="autoday" class="carousel slide mat-elevation-z2 animated wow bounceInLeft rounded" data-wow-delay="500ms" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <ng-container *ngFor="let ad of photoAD; first as isFirst">
+                    <div class="carousel-item rounded" [ngClass]="{active: isFirst}">
+                      <img class="d-block w-100 rounded" [src]="ad" alt="First slide">
+                    </div>
+                  </ng-container>
+                  </div>
+                  <a class="carousel-control-prev" href="#autoday" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#autoday" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+            </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-md-6 pt-4">
+            <div class="d-flex flex-column animated wow bounceInRight" data-wow-delay="500ms">
+                <h1 class="linear-wipe">RetroDay</h1>
+                    <p class="text-justify">Un défilé de voitures historiques assuré par de nombreux collectionneurs membres de l’association tunisienne d’automobile historique,
+                      une exposition de voitures miniatures provenant d’une collection unique de plus de 500 voitures emblématiques,
+                      des stands de jeux rétro, SEGA, Nintendo et autres assurés par l’association tunisienne de retro gaming.
+                    </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div id="retroday" class="carousel slide mat-elevation-z2 animated wow bounceInRight rounded" data-wow-delay="500ms" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <ng-container *ngFor="let r of photoR; first as isFirst">
+                    <div class="carousel-item rounded" [ngClass]="{active: isFirst}">
+                      <img class="d-block w-100 rounded" [src]="r" alt="First slide">
+                    </div>
+                  </ng-container>
+                  </div>
+                  <a class="carousel-control-prev" href="#retroday" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#retroday" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+            </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-md-6 pt-4">
+            <div class="d-flex flex-column animated wow bounceInLeft" data-wow-delay="500ms">
+                <h1 class="linear-wipe">Tournoi Karting</h1>
+                    <p class="text-justify">Chaque année un tournoi de karting regroupe plusieurs amateurs de course
+                        Passionné de vitesse en quête d'adrénaline ? envie de faire la fête avec vos amis ? pourquoi pas les deux en même temps avec le fameux weekend KARTING
+                        Une occasion de piloter des karts et de participer à des courses de vitesse, défiez vos amis et écrasez-les dans le grand circuit de Monastir.
+
+                    </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div id="karting" class="carousel slide mat-elevation-z2 animated wow bounceInLeft rounded" data-wow-delay="500ms" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <ng-container *ngFor="let k of photoK; first as isFirst">
+                    <div class="carousel-item rounded" [ngClass]="{active: isFirst}">
+                      <img class="d-block w-100 rounded" [src]="k" alt="First slide">
+                    </div>
+                  </ng-container>
+                  </div>
+                  <a class="carousel-control-prev" href="#karting" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#karting" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+            </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-md-6 pt-4">
+            <div class="d-flex flex-column animated wow bounceInLeft" data-wow-delay="500ms">
+                <h1 class="linear-wipe">Passage Radio</h1>
+                    <p class="text-justify">Autoclub INSAT depuis l’été 2017 anime une chronique chaque samedi
+                       sur les ondes de RTCI pour l’émission AUTOMOTO relatant les évènements de sport mécanique en Tunisie
+
+                    </p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+              <img class="img-fluid rounded mat-elevation-z2" src="/assets/rtci.png" alt="rtci" data-wow-delay="500ms">
+            </div>
+    </div>
+  </mat-card>

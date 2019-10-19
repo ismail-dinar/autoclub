@@ -1,0 +1,60 @@
+<mat-card class="mx-auto mb-5 pt-4 mat-elevation-z4">
+  <div class="text-center animated wow zoomIn" data-wow-delay="500ms">
+    <h1 class="linear-wipe title">FAST AND FURIOUS</h1>
+  </div>
+  <div class="animated wow bounceInLeft w-75 mx-auto mb-2" data-wow-delay="500ms">
+    <p class="text-justify">Fast & Furious, est un concours dédié aux passionnés de la robotique qui n’hésiteront pas à
+      nous fasciner par leurs créativités et ingéniosités. Ce concours sera organisé dans sa deuxième édition le 23
+      février au hall de l’INSAT.
+      Fast and Furious comporte une compétition de drift, une compétition de rallye , une compétition de formula ,
+      un challenge cao et un challenge design.
+    </p>
+    <mat-nav-list>
+      <mat-list-item>
+        <a matLine  [routerLink]="['/rallye']"><fa-icon class="mr-1 h-100" [icon]="['fas', 'trophy']"></fa-icon>Compétition de Rally</a><fa-icon class="arrow" [icon]="['fas', 'arrow-right']"></fa-icon>
+      </mat-list-item>
+      <mat-list-item>
+        <a matLine  [routerLink]="['/drift']"><fa-icon class="mr-1" [icon]="['fas', 'trophy']"></fa-icon>Compétition de Drift</a><fa-icon class="arrow" [icon]="['fas', 'arrow-right']"></fa-icon>
+      </mat-list-item>
+      <mat-list-item>
+        <a matLine  [routerLink]="['/formula']"><fa-icon class="mr-1" [icon]="['fas', 'trophy']"></fa-icon>Compétition de Formula</a><fa-icon class="arrow" [icon]="['fas', 'arrow-right']"></fa-icon>
+      </mat-list-item>
+      <mat-list-item>
+        <a matLine  [routerLink]="['/challenge-cao']"><fa-icon class="mr-1" [icon]="['fas', 'trophy']"></fa-icon>Challenge CAO</a><fa-icon class="arrow" [icon]="['fas', 'arrow-right']"></fa-icon>
+      </mat-list-item>
+      <mat-list-item>
+        <a matLine  [routerLink]="['/challenge-design']"><fa-icon class="mr-1" [icon]="['fas', 'trophy']"></fa-icon>Challenge Design</a><fa-icon class="arrow" [icon]="['fas', 'arrow-right']"></fa-icon>
+      </mat-list-item>
+    </mat-nav-list>
+  </div>
+  <h1 class="linear-wipe">Lancement Fast & furious 2019</h1>
+  <div class="col-md-9 mx-auto animated wow bounceInLeft">
+      <div class="embed-responsive mx-auto embed-responsive-16by9 rounded mat-elevation-z3">
+          <iframe  src="https://www.youtube.com/embed/dopc5ytOlUQ"
+      class="embed-responsive-item"
+       allowfullscreen ></iframe>
+      </div>
+  </div>
+  <h1 class="linear-wipe">Images de la 1ère édition</h1>
+  <div id="fast" class="carousel slide mat-elevation-z2 animated wow bounceInLeft rounded w-75 mx-auto mb-3" data-wow-delay="500ms"
+  data-ride="carousel">
+  <div class="carousel-inner">
+    <ng-container *ngFor="let f of photoFF; first as isFirst">
+      <div class="carousel-item rounded" [ngClass]="{active: isFirst}">
+        <img class="d-block w-100 rounded" [src]="f" alt="First slide">
+      </div>
+    </ng-container>
+  </div>
+  <a class="carousel-control-prev" href="#fast" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#fast" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<h1 class="linear-wipe">Bureau de l'événement</h1>
+<app-staff></app-staff>
+</mat-card>
+

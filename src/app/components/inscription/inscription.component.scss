@@ -1,0 +1,13 @@
+mat-form-field{
+  margin-bottom: 0 !important;
+  min-width: 20rem;
+}
+mat-card{
+  max-width: 70rem;
+  margin-top: 110px;
+}
+@media (max-width:578px){
+  mat-form-field{
+    min-width: 15rem !important;
+  }
+}

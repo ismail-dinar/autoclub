@@ -1,0 +1,10 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$AutoClub-primary: mat-palette($mat-red,A700);
+$AutoClub-accent: mat-palette($mat-blue, A400);
+$AutoClub-warn: mat-palette($mat-red);
+$AutoClub-theme: mat-light-theme($AutoClub-primary, $AutoClub-accent, $AutoClub-warn);
+@include angular-material-theme($AutoClub-theme);
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-image: url('assets/bright-squares.png');}

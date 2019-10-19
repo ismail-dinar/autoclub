@@ -1,0 +1,26 @@
+<mat-card class="mx-auto mb-5 py-5 mat-elevation-z4">
+  <h1 class="linear-wipe">Compétition de Drift</h1>
+  <div class="container">
+    <div class="row wow animated bounceInLeft">
+      <div class="col-md-6 offset-md-1">
+        <p class="text-justify">
+          Le drift est un monde connu dans l’univers des voitures , mais il n’en est pas des moindres dans le domaine de la robotique .
+          Ainsi cette compétition consistera à effectuer des figures de Drift à l’aide d’un robot téléguidé pendant le lapse de temps
+          indiqué dans le cahier des charges . Le secret pour réussir et gagner cette compétition haut la main , sera de concocter une
+          stratégie bien étudiée afin de récolter un maximum de points . Ainsi , stratagèmes , habileté et vitesse réunies seront les atouts de notre futur vainqueur.
+          Alors si vous voyez en vous ces 3 caractéristiques primordiales , n’hésitez pas à vous inscrire à notre compétition Drift !
+
+        </p>
+        <div class="d-flex justify-content-center mb-3">
+            <a [routerLink]="['/inscription', 'teamsDrift']" class="mr-3" mat-raised-button color="primary">S'inscrire</a>
+            <a  href="/assets/CDC-drift.pdf" mat-raised-button color="primary">Cahier des charges<fa-icon class="ml-3" [icon]="['fas', 'download']"></fa-icon></a>
+        </div>
+      </div>
+      <div class="col-md-5">
+          <div class="d-flex justify-content-center w-75 mx-auto">
+              <img class="rounded mat-elevation-z3 img-fluid " src="/assets/drift.jpg" alt="formula">
+          </div>
+      </div>
+    </div>
+  </div>
+</mat-card>

@@ -1,0 +1,66 @@
+<mat-toolbar cdkScrollable class="fixed d-none d-md-flex white p-0"  [ngClass]="{'shrink-toolbar mat-elevation-z6 ': shrinkToolbar, 'extend': !shrinkToolbar}">
+  <div class="d-flex flex-column w-100">
+    <div [ngClass]="{'hide': shrinkToolbar}" class="contacts w-100">
+      <div class="row">
+        <div class="col-md-9 pl-5">
+            <ul id="mail-address" class="list-inline my-0">
+                <li class="list-inline-item mr-3"><a target="_blank" href="https://goo.gl/3xzGqJ"><fa-icon class="mr-1" [icon]="['fas', 'map-marker-alt']"></fa-icon>676 INSAT Centre Urbain Nord BP,Tunis Cedex 1080</a></li>
+                <li class="list-inline-item"><a href="mailto:autoclub@gamil.com"><fa-icon class="mr-1" [icon]="['fas', 'at']"></fa-icon>contact@autoclub-insat.com</a></li>
+              </ul>
+        </div>
+        <div class="col-md-3 pr-5 d-flex justify-content-center">
+            <ul id="social" class="list-inline my-0">
+                <li class="list-inline-item mr-3"><a id="fb" target="_blank" href="https://www.facebook.com/insatautoclub/?ref=br_rs"><fa-icon size="lg" class="mr-1" [icon]="['fab', 'facebook-f']"></fa-icon></a></li>
+                <li class="list-inline-item"><a id="insta" target="_blank" href="https://www.instagram.com/autoclub_insat/"><fa-icon size="lg" class="mr-1" [icon]="['fab', 'instagram']"></fa-icon></a></li>
+                <li class="list-inline-item"><a id="yt" target="_blank" href="https://goo.gl/vHCNbX"><fa-icon size="lg" class="mr-1" [icon]="['fab', 'youtube']"></fa-icon></a></li>
+            </ul>
+        </div>
+      </div>
+
+    </div>
+    <div id="links" class="d-flex flex-row justify-content-between mr-3">
+        <a  class="logo" mat-button routerLink="/" >
+          <img  alt="autoclub" class="logo" src="/assets/autoclub.png">
+      </a>
+      <nav  class="d-flex flex-row justify-content-between  w-50 pt-0" >
+          <a class=" my-auto" [routerLink]="['/']" routerLinkActive="mat-elevation-z1" [routerLinkActiveOptions]="{ exact: true }" mat-button>
+            AutoClub
+          </a>
+            <a class=" my-auto   " [routerLink]="['/fast&furious']" routerLinkActive="mat-elevation-z1" mat-button>
+              Fast & Furious
+            </a>
+            <a class=" my-auto " [routerLink]="['/autoday']" routerLinkActive="mat-elevation-z1" mat-button>
+              AutoDay
+            </a>
+            <a class=" my-auto  " [routerLink]="['/activités']" routerLinkActive="mat-elevation-z1" mat-button>
+              Activités
+            </a>
+            <!-- <a class=" my-auto  " [routerLink]="['/contact']" routerLinkActive="mat-elevation-z1"  mat-button>
+              Contact
+            </a> -->
+        </nav>
+    </div>
+
+  </div>
+</mat-toolbar>
+<mat-expansion-panel  class="d-block d-md-none panel" (clickOutside)="expanded = false" [expanded]="expanded" (opened)="expanded = true">
+  <mat-expansion-panel-header>
+    <mat-panel-title class="linear-wipe">
+      Autoclub
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <mat-nav-list class="d-flex flex-column ">
+    <a  mat-list-item [routerLink]="['/']"  >
+      AutoClub
+    </a>
+    <a  mat-list-item [routerLink]="['/fast&furious']" >
+      Fast & Furious
+    </a>
+    <a  mat-list-item [routerLink]="['/autoday']" >
+      AutoDay
+    </a>
+    <a  mat-list-item [routerLink]="['/activités']" >
+      Activités
+    </a>
+  </mat-nav-list>
+</mat-expansion-panel>

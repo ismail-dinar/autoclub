@@ -1,0 +1,74 @@
+{
+  "staff": [
+    {
+      "name": "Jamil Fitouri",
+      "photo": "/assets/staff/1.jpg",
+      "role": "Président du club"
+    },
+    {
+      "name": "Amina Djemel",
+      "photo": "/assets/staff/3.jpg",
+      "role": " Vice-présidente du club et responsable sponsoring"
+    },
+    {
+      "name": "Rayen Ben Sassi",
+      "photo": "/assets/staff/10.jpg",
+      "role": "Président de l’évènement Fast & Furious"
+    },
+    {
+      "name": "Atef Zarrami ",
+      "photo": "/assets/staff/11.jpg",
+      "role": "Responsable audiovisuel "
+    },
+    {
+      "name": "Wiem Yahyaoui ",
+      "photo": "/assets/staff/4.jpg",
+      "role": "Responsable organisation et décoration "
+    },
+    {
+      "name": "Maryem Anane",
+      "photo": "/assets/staff/2.jpg",
+      "role": "Responsable media "
+    },
+    {
+      "name": "Emna Marzougui ",
+      "photo": "/assets/staff/7.jpg",
+      "role": "Responsable challenge Design "
+    },
+    {
+      "name": "Mortadha Dridi",
+      "photo": "/assets/staff/9.jpg",
+      "role": "Responsable challenge CAO"
+    },
+    {
+      "name": "Latifa ELayed ",
+      "photo": "/assets/staff/8.jpg",
+      "role": "Responsable challenge Formula"
+    },
+    {
+      "name": "Mohamed Ali Nammouchi ",
+      "photo": "/assets/staff/5.jpg",
+      "role": "Responsable challenge Rally"
+    },
+    {
+      "name": "Eya el Habib",
+      "photo": "/assets/staff/6.jpg",
+      "role": "Responsable challenge Drift "
+    }
+  ],
+  "photoAD":["/assets/Autoday/1.jpg","/assets/Autoday/2.jpg","/assets/Autoday/3.jpg","/assets/Autoday/4.jpg","/assets/Autoday/5.jpg","/assets/Autoday/6.jpg",
+    "/assets/Autoday/7.jpg","/assets/Autoday/8.jpg","/assets/Autoday/9.jpg","/assets/Autoday/10.jpg","/assets/Autoday/11.jpg","/assets/Autoday/12.jpg",
+    "/assets/Autoday/13.jpg","/assets/Autoday/14.jpg","/assets/Autoday/15.jpg"
+  ],
+  "photoFF":["/assets/FF/1.jpg","/assets/FF/2.jpg","/assets/FF/3.jpg","/assets/FF/4.jpg","/assets/FF/5.jpg",
+    "/assets/FF/6.jpg","/assets/FF/7.jpg","/assets/FF/8.jpg","/assets/FF/9.jpg"
+  ],
+  "photoK":["/assets/karting/1.jpg","/assets/karting/2.jpg",
+    "/assets/karting/3.jpg","/assets/karting/4.jpg","/assets/karting/5.jpg"
+    ,"/assets/karting/6.jpg","/assets/karting/7.jpg"
+  ],
+  "photoR":["/assets/retro/1.jpg","/assets/retro/2.jpg","/assets/retro/3.jpg","/assets/retro/4.jpg","/assets/retro/5.jpg",
+    "/assets/retro/6.jpg","/assets/retro/7.jpg","/assets/retro/8.jpg","/assets/retro/9.jpg","/assets/retro/10.jpg"]
+
+
+}
